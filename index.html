@@ -4,121 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amelia Stokolosa</title>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-  <style>
-    :root {
-      --paper: #fbfaf7;
-      --ink: #1c2230;
-      --muted: #5b6474;
-      --rule: #d9d6cf;
-      --link: #2a5d8f;
-    }
-
-    
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    main {
-      max-width: 42rem;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 6rem;
-    }
-    header {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 1.5rem;
-      align-items: start;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--rule);
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-    h1 { font-size: 2.2rem; font-weight: normal; margin: 0 0 .25rem; line-height: 1.15; }
-    .role { color: var(--muted); margin: 0; }
-    .role a { color: inherit; }
-    nav { margin-top: 1.25rem; }
-    nav a { margin-right: 1.25rem; }
-    h2 {
-      font-size: 1.05rem;
-      font-weight: normal;
-      font-style: italic;
-      color: var(--muted);
-      margin: 3rem 0 .75rem;
-    }
-    p { margin: 0 0 1rem; }
-    ul { padding-left: 1.2rem; margin: 0; }
-    li { margin-bottom: .8rem; }
-    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
-    @media (max-width: 560px) {
-      header { grid-template-columns: 1fr; }
-      header img { order: -1; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 
   <header>
     <div>
-      <h1>Amelia Stokolosa</h1>
+      <h1><a href="index.html">Amelia Stokolosa</a></h1>
       <p class="role">Visiting Assistant Professor <br>
         School of Mathematics, Georgia Institute of Technology</p>
       <nav>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
         <a href="cv.pdf">CV</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
-        <img src="photo.jpg" alt="Portrait of Amelia Stokolosa">
+    <img src="photo.jpg" alt="Portrait of Amelia Stokolosa">
   </header>
 
   <section>
     <h2>About</h2>
-    <p>I am a Visiting Assistant Professor in the School of Mathematics at Georgia Institute of Technology, where my mentor is <a href="https://lacey.math.gatech.edu" target="_blank">Michael Lacey</a>. 
+    <p>I am a Visiting Assistant Professor in the School of Mathematics at Georgia Institute of Technology, where my mentor is <a href="https://lacey.math.gatech.edu" target="_blank">Michael Lacey</a>.
        I received my Ph.D. from the University of Wisconsin-Madison in August 2025, where my advisor was <a href="https://people.math.wisc.edu/~bstreet/" target="_blank">Brian Street</a>.</p>
 
-    <p>My current research interests are in discrete harmonic analysis, additive combinatorics, and quasilinear dispersive equations. 
-      Previously, my research focused on the study of multi-parameter singular integrals on graded Lie groups using tools from PDEs and Operator Algebra theory. </p>
+    <p>My current research interests are in discrete harmonic analysis, additive combinatorics, and quasilinear dispersive equations.
+      Previously, my research focused on the study of multi-parameter singular integrals on graded Lie groups using tools from PDEs and Operator Algebra theory.
+      A list of my <a href="research.html">publications and preprints</a> and information about my <a href="teaching.html">teaching</a> are on separate pages.</p>
   </section>
 
-  <section id="research">
-    <h2>Publications and Preprints</h2>
-    <ul>
-      <li>Alex Burgin, Anastasios Fragkos, David Kruzel, Michael Lacey, A.S. "Reasonable bounds for Restricted Polynomial Progressions in \(\mathbb{F}^n_p\)" (2026) preprint.
-          <a href="https://arxiv.org/pdf/2610.12831">pdf</a></li>
-      <li>Anastasios Fragkos, Hamed Mousavi, A.S. "Polynomial Ergodic Averages Along Short Intervals" (2026) Submitted.
-          <a href="https://arxiv.org/pdf/2608.24831">pdf</a></li>
-      <li>A.S. "Tame algebra estimates for product and flag kernels on graded Lie groups." (2024) Submitted.
-          <a href="https://arxiv.org/pdf/2410.11346">pdf</a></li>
-      <li>A.S. "Inverses of Product Kernels and Flag Kernels on Graded Lie Groups." J. Math. Anal. Appl. 2026</li>
-    </ul>
-  </section>
-
-  
-
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <p>My office hours are Wednesday 10:00am-11:00am and Friday 11:00am-12:00 in Clough 248.</p>
-    <ul>
-      <li>Math 2551: Multivariable Calculus (Fall 2026)</li>
-      <li>Math 1552: Integral Calculus (Spring 2026)</li>
-      <li>Math 1553: Introduction to Linear Algebra (Fall 2025)</li>
-    </ul>
-  </section>
-
-  <section id ="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <p>stokolosa [at] gatech [dot] edu</p>
   </section>
