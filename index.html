@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <style>
+    :root {
+      --paper: #fbfaf7;
+      --ink: #1c2230;
+      --muted: #5b6474;
+      --rule: #d9d6cf;
+      --link: #2a5d8f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color-scheme: dark;
+        --paper: #161a21;
+        --ink: #e8e6e1;
+        --muted: #a2a8b3;
+        --rule: #2f3540;
+        --link: #8fb8e4;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: start;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    h1 { font-size: 2.2rem; font-weight: normal; margin: 0 0 .25rem; line-height: 1.15; }
+    .role { color: var(--muted); margin: 0; }
+    .role a { color: inherit; }
+    nav { margin-top: 1.25rem; }
+    nav a { margin-right: 1.25rem; }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: normal;
+      font-style: italic;
+      color: var(--muted);
+      margin: 3rem 0 .75rem;
+    }
+    p { margin: 0 0 1rem; }
+    ul { padding-left: 1.2rem; margin: 0; }
+    li { margin-bottom: .8rem; }
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+    @media (max-width: 560px) {
+      header { grid-template-columns: 1fr; }
+      header img { order: -1; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div>
+      <h1>Amelia Stokolosa</h1>
+      <p class="role">Visiting Assistant Professor <br>
+        School of Mathematics, Georgia Institute of Technology</p>
+      <nav>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="cv.pdf">CV</a>
+        <a href="mailto:stokolosa@gatech.edu">Email</a>
+      </nav>
+    </div>
+    
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>I am a Visiting Assistant Professor in the School of Mathematics at Georgia Institute of Technology, where my mentor is Michael Lacey. 
+       I received my Ph.D. from the University of Wisconsin-Madison in August 2025, where my advisor was Brian Street.</p>
+
+    <p>My current research interests are in discrete harmonic analysis, additive combinatorics, and quasilinear dispersive equations. 
+      Previously, my research focused on the study of multi-parameter singular integrals on graded Lie groups using tools from PDEs and Operator Algebra theory. </p>
+  </section>
+
+  <section id="publications and preprints">
+    <h2>Publications and Preprints</h2>
+    <ul>
+      <li>Alex Burgin, Anastasios Fragkos, David Kruzel, Michael Lacey, A.S. "Reasonable bounds for Restricted Polynomial Progressions in $\mathbb{F}^n_p$" (2026) preprint.
+          <a href="https://arxiv.org/pdf/2610.12831">pdf</a></li>
+      <li>Anastasios Fragkos, Hamed Mousavi, A.S. "Polynomial Ergodic Averages Along Short Intervals" (2026) Submitted.
+          <a href="https://arxiv.org/pdf/2608.24831">pdf</a></li>
+      <li>A.S. "Tame algebra estimates for product and flag kernels on graded Lie groups." (2024) Submitted.
+          <a href="https://arxiv.org/pdf/2410.11346">pdf</a></li>
+      <li>A.S. "Inverses of Product Kernels and Flag Kernels on Graded Lie Groups." J. Math. Anal. Appl. 2026</li>
+    </ul>
+  </section>
+
+  
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul>
+      <li>Math 2551: Multivariable Calculus (Fall 2026)</li>
+      <li>Math 1552: Integral Calculus (Spring 2026)</li>
+      <li>Math 1553: Introduction to Linear Algebra (Fall 2025)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>stokolosa [at] gatech [dot] edu</p>
+  </section>
+
+</main>
+</body>
+</html>
